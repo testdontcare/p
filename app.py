@@ -1,9 +1,9 @@
 import dash
 from dash import dcc, html, Input, Output
 import dash_bootstrap_components as dbc
-from main_page import render_main_page, register_callbacks as register_main_callbacks
-from map_page import render_map_page, register_callbacks as register_map_callbacks
-from about_page import render_about_page
+from pages.main_page import render_main_page, register_callbacks as register_main_callbacks
+from pages.map_page import render_map_page, register_callbacks as register_map_callbacks
+from pages.about_page import render_about_page
 
 app = dash.Dash(__name__,suppress_callback_exceptions=True,external_stylesheets=[dbc.themes.LITERA])
 
